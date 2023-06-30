@@ -16,6 +16,10 @@ public class App
         chromeDriver.get("https://thecodecamp.org");
         //chromeDriver.getTitle();
         System.out.println(chromeDriver.getTitle());
+        System.out.println(chromeDriver.getCurrentUrl());
+        
+        chromeDriver.close();//this will close only current window 
+        chromeDriver.quit();//this will close all accociated windows 
 
         
     }
